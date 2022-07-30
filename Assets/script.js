@@ -21,6 +21,10 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+function generatePassword() {
+  
+}
+
 var needPassword = confirm("Do you need a password? Yes or no?")
 console.log(needPassword);
 
@@ -28,6 +32,8 @@ if (needPassword) {
   passLength = prompt("How long would you like the password? 8-128 chr")
 }
 console.log(passLength);
-function generatePassword() {
-  
-}
+
+var needLowerCase = confirm("Would you like Lower Case?")
+var needUpperCase = confirm("Would you like Upper Case?")
+var needNumeric = confirm("Would you like Numeric Values?")
+var needSpecial = confirm("Would you like Special Characters?")
