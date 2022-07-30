@@ -71,4 +71,19 @@ let zen = "";
 //     break;
 // }
 
+function combineString() {
+  if (needLowerCase) {
+    zen = zen.concat(char.lowercase)
+  }
+  if (needUpperCase) {
+    zen = zen.concat(char.lowercase)
+  }
+  if (needNumeric) {
+    zen = zen.concat(char.numeric)
+  }
+  if (needSpecial) {
+    zen = zen.concat(char.special)
+  }
+}
+combineString()
 console.log(zen);
