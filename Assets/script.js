@@ -37,3 +37,38 @@ var needLowerCase = confirm("Would you like Lower Case?")
 var needUpperCase = confirm("Would you like Upper Case?")
 var needNumeric = confirm("Would you like Numeric Values?")
 var needSpecial = confirm("Would you like Special Characters?")
+
+console.log(needLowerCase);
+console.log(needUpperCase);
+console.log(needNumeric);
+console.log(needSpecial);
+
+let zen = "";
+switch (zen) {
+  case (needLowerCase):
+    if (needLowerCase) {
+      zen = zen.concat(char.lowercase)
+    }
+    break;
+  case 1:
+    if (needUpperCase) {
+      zen = zen.concat(char.uppercase)
+    }
+    break;
+  case 2:
+    if (needNumeric) {
+      zen = zen.concat(char.numeric)
+    }
+    break;
+  case 3:
+    if (needSpecial) {
+      zen = zen.concat(char.special)
+    }
+    break;
+  default:
+    console.log("you're stupid");
+    console.log(zen);
+    break;
+}
+
+console.log(zen);
