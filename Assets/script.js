@@ -21,11 +21,13 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+
 function generatePassword() {
-  i = 0;
-  for (let i = 0; i < passLength.length; i++) {
-    password = Math.floor(Math.random() * passLength+1)
-    
+  let i, len;
+  var randomPicker = Math.floor(Math.random() * passLength);
+  for (let i = 0; len = passLength.length, i < len; i++) {
+    password = zen[randomPicker]
+    return password;
   }
 }
 
@@ -91,3 +93,5 @@ function combineString() {
 }
 combineString()
 console.log(zen);
+generatePassword()
+console.log(password);
