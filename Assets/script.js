@@ -22,7 +22,11 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  
+  i = 0;
+  for (let i = 0; i < passLength.length; i++) {
+    password = Math.floor(Math.random() * passLength+1)
+    
+  }
 }
 
 var needPassword = confirm("Do you need a password? Yes or no?")
@@ -76,7 +80,7 @@ function combineString() {
     zen = zen.concat(char.lowercase)
   }
   if (needUpperCase) {
-    zen = zen.concat(char.lowercase)
+    zen = zen.concat(char.uppercase)
   }
   if (needNumeric) {
     zen = zen.concat(char.numeric)
