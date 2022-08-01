@@ -23,10 +23,9 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-  
   for (var i = 0; i <= passLength; i++) {
-    var randomPicker = Math.floor(Math.random() * passLength);
-    password = zen[randomPicker];
+    var randomPicker = Math.floor(Math.random() * zen.length);
+    password += zen[randomPicker, randomPicker -1]
   }
 }
 
