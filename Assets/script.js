@@ -67,3 +67,4 @@ combineString()
 console.log(zen);
 generatePassword()
 console.log(password);
+console.log(typeof(password));
