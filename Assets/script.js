@@ -23,11 +23,10 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-  let i, len;
-  var randomPicker = Math.floor(Math.random() * passLength);
-  for (let i = 0; len = passLength.length, i < len; i++) {
-    password = zen[randomPicker]
-    return password;
+  
+  for (var i = 0; i <= passLength; i++) {
+    var randomPicker = Math.floor(Math.random() * passLength);
+    password = zen[randomPicker];
   }
 }
 
@@ -49,7 +48,7 @@ console.log(needUpperCase);
 console.log(needNumeric);
 console.log(needSpecial);
 
-let zen = "";
+let zen = [""];
 // switch (zen) {
 //   case (needLowerCase):
 //     if (needLowerCase) {
