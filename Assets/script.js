@@ -23,10 +23,10 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-  let zen = [""];
+  let zen = [];
   passLength = prompt("How long would you like the password? 8-128 chr");
   console.log(passLength);
-  if (!passLength == 8 < 128) {
+  if (isNaN(passLength) || passLength < 8 || passLength > 128) {
     alert("Please enter a value between 8-128.");
     generatePassword();
   }
@@ -59,43 +59,3 @@ function generatePassword() {
   }
   return password;
 }
-
-// var needPassword = confirm("Do you need a password? Yes or no?")
-// console.log(needPassword);
-
-// if (needPassword) {
-//   passLength = prompt("How long would you like the password? 8-128 chr")
-// }
-// console.log(passLength);
-
-// var needLowerCase = confirm("Would you like Lower Case?");
-// var needUpperCase = confirm("Would you like Upper Case?");
-// var needNumeric = confirm("Would you like Numeric Values?");
-// var needSpecial = confirm("Would you like Special Characters?");
-
-// console.log(needLowerCase);
-// console.log(needUpperCase);
-// console.log(needNumeric);
-// console.log(needSpecial);
-
-
-
-// function combineString() {
-//   if (needLowerCase) {
-//     zen = zen.concat(char.lowercase)
-//   }
-//   if (needUpperCase) {
-//     zen = zen.concat(char.uppercase)
-//   }
-//   if (needNumeric) {
-//     zen = zen.concat(char.numeric)
-//   }
-//   if (needSpecial) {
-//     zen = zen.concat(char.special)
-//   }
-// }
-// combineString();
-// console.log(zen);
-// generatePassword();
-// console.log(password);
-// console.log(typeof(password));
